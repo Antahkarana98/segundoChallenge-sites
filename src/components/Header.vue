@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="w-3/4 mx-auto text-center mt-12">
+  <div class="w-3/4 mx-auto text-center mt-10">
 
     <h2 v-if="props.lenguage" class="text-custom-gray text-2xl">Increase your income through your content on <strong>Page</strong></h2>
     <h2 v-else class="text-custom-gray text-2xl">Aumenta tus ingresos a través de tu contenido en <strong>Pagina</strong></h2>

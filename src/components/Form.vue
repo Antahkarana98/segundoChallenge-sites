@@ -184,7 +184,7 @@
       </div>
     </div>
 
-    <div class="relative mb-8">
+    <div class="relative mb-6">
       <input
         type="password"
         :placeholder="props.lenguage ? 'Repite Password' : 'Repetir Contraseña'"
@@ -204,7 +204,7 @@
       confirming that you are of legal age in your place of residence.
     </p>
 
-    <p v-else class="text-center text-custom-gray mb-10">Al completar el registro, usted está aceptando nuestras <span class="text-black font-semibold">políticas
+    <p v-else class="text-center text-custom-gray mb-8">Al completar el registro, usted está aceptando nuestras <span class="text-black font-semibold">políticas
       de privacidad y términos de servicio</span>, además confirma que cumple
       con la mayoria de edad de su lugar de residencia.
     </p>

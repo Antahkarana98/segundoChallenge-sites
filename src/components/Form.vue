@@ -112,13 +112,13 @@
 
 <template>
   <form class="">
-    <div class="relative mb-5">
+    <div class="relative mb-4">
       <input
         type="text"
         :placeholder="props.lenguage ? 'Email' : 'Correo Electrónico'"
         name="email"
         id="email"
-        :class="errorEmail === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-5 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorEmail === 1 ? 'w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.email"
         @input="validarFormulario"
       />
@@ -130,13 +130,13 @@
       </div>
     </div>
 
-    <div class="relative mb-5">
+    <div class="relative mb-4">
       <input
         type="text"
         :placeholder="props.lenguage ? 'Name' : 'Nombre Completo'"
         name="name"
         id="name"
-        :class="errorName === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-5 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorName === 1 ? 'w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.name"
         @input="validarFormulario"
       />
@@ -149,13 +149,13 @@
 
     </div>
 
-    <div class="relative mb-5">
+    <div class="relative mb-4">
       <input
         type="date"
         :placeholder="datePlaceholder"
         name="date"
         id="date"
-        :class="errorDate === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-5 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorDate === 1 ? 'w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.date"
         @input="validarFormulario"
       />
@@ -168,13 +168,13 @@
     </div>
 
 
-    <div class="relative mb-5">
+    <div class="relative mb-4">
       <input
         type="password"
         :placeholder="props.lenguage ? 'Password' : 'Contraseña'"
         name="password"
         id="password"
-        :class="errorPassword === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-5 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorPassword === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.password"
         @input="validarFormulario"
       />
@@ -190,7 +190,7 @@
         :placeholder="props.lenguage ? 'Repite Password' : 'Repetir Contraseña'"
         name="password2"
         id="password2"
-        :class="errorPassword2 === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-5 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorPassword2 === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.password2"
         @input="validarFormulario"
       />
@@ -213,7 +213,7 @@
     <div class="flex justify-center">
       <button
         type="submit"
-        class="w-full py-5 text-white bg-purple-light rounded-full text-2xl hover:shadow-xl"
+        class="w-full py-4 text-white bg-purple-light rounded-full text-2xl hover:shadow-xl"
       >
         {{ props.lenguage ? 'Sign Up' : 'Regístrate'}}
       </button>

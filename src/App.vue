@@ -17,7 +17,7 @@
 
 <template>
   <img src="./assets/Fondo2.png" alt="fondo" class="w-screen h-screen absolute -z-10 bg-cover bg-center">
-  <div class="container mx-auto pt-20">
+  <div class="container mx-auto pt-16">
     <div class="flex justify-between mx-10">
       <div class="text-4xl">
         <SocialMedia />

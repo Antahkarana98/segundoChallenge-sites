@@ -155,7 +155,7 @@
         :placeholder="datePlaceholder"
         name="date"
         id="date"
-        :class="errorDate === 1 ? 'w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorDate === 1 ? 'w-full py-4 text-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 text-custom-gray  rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.date"
         @input="validarFormulario"
       />

@@ -115,7 +115,7 @@
     <div class="relative mb-4">
       <input
         type="text"
-        :placeholder="props.lenguage ? 'Email' : 'Correo Electrónico'"
+        :placeholder="props.lenguage ? 'Correo Electrónico' : 'Email'"
         name="email"
         id="email"
         :class="errorEmail === 1 ? 'w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
@@ -133,7 +133,7 @@
     <div class="relative mb-4">
       <input
         type="text"
-        :placeholder="props.lenguage ? 'Name' : 'Nombre Completo'"
+        :placeholder="props.lenguage ? 'Nombre Completo' : 'Full Name'"
         name="name"
         id="name"
         :class="errorName === 1 ? 'w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
@@ -171,7 +171,7 @@
     <div class="relative mb-4">
       <input
         type="password"
-        :placeholder="props.lenguage ? 'Password' : 'Contraseña'"
+        :placeholder="props.lenguage ? 'Contraseña' : 'Password'"
         name="password"
         id="password"
         :class="errorPassword === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
@@ -187,7 +187,7 @@
     <div class="relative mb-6">
       <input
         type="password"
-        :placeholder="props.lenguage ? 'Repite Password' : 'Repetir Contraseña'"
+        :placeholder="props.lenguage ? 'Repetir Contraseña' : 'Repite Password'"
         name="password2"
         id="password2"
         :class="errorPassword2 === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
@@ -200,22 +200,21 @@
       </div>
     </div>
 
-    <p  v-if="props.lenguage" class="text-center text-custom-gray mb-10">By completing the registration, you are accepting our <span class="text-black font-semibold ">privacy policies and terms of service</span>, also
-      confirming that you are of legal age in your place of residence.
-    </p>
-
-    <p v-else class="text-center text-custom-gray mb-8">Al completar el registro, usted está aceptando nuestras <span class="text-black font-semibold">políticas
+    <p v-if="props.lenguage" class="text-center text-custom-gray mb-8">Al completar el registro, usted está aceptando nuestras <span class="text-black font-semibold">políticas
       de privacidad y términos de servicio</span>, además confirma que cumple
       con la mayoria de edad de su lugar de residencia.
     </p>
 
+    <p v-else class="text-center text-custom-gray mb-8">By completing the registration, you are accepting our <span class="text-black font-semibold ">privacy policies and terms of service</span>, also
+      confirming that you are of legal age in your place of residence.
+    </p>
 
     <div class="flex justify-center">
       <button
         type="submit"
         class="w-full py-4 text-white bg-purple-light rounded-full text-2xl hover:shadow-xl"
       >
-        {{ props.lenguage ? 'Sign Up' : 'Regístrate'}}
+        {{ props.lenguage ? 'Regístrate' : 'Sign Up'}}
       </button>
 
     </div>

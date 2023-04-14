@@ -10,7 +10,7 @@
 
 <template>
   <div class="flex">
-    <p class="my-auto me-3">{{props.lenguage ? 'Spanish' : 'Español'}}</p>
+    <p class="my-auto me-3">{{props.lenguage ? 'Inglés' : 'English'}}</p>
       <label class="relative inline-flex items-center cursor-pointer">
         <input
         type="checkbox"
@@ -23,7 +23,7 @@
         after:bg-white after:border-gray-300 after:border after:rounded-full after:h-7 after:w-7
         after:transition-all dark:border-gray-600 peer-checked:bg-purple-light"></div>
       </label>
-    <p class="my-auto ms-3">{{props.lenguage ? 'English' : 'Inglés'}}</p>
+      <p class="my-auto ms-3">{{props.lenguage ? 'Español' : 'Spanish'}}</p>
   </div>
 
 

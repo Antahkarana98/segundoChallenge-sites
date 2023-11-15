@@ -7,6 +7,7 @@
   import Header from './components/Header.vue';
   import Form from './components/Form.vue';
 
+
   let lenguage = ref(false);
 
   const handleChangeSwitch = (e) => {
@@ -16,8 +17,10 @@
 </script>
 
 <template>
-  <img src="./assets/Fondo2.png" alt="fondo" class="w-screen h-screen absolute -z-10 bg-cover bg-center">
-  <div class="container mx-auto pt-16">
+  <div class="background-image1"></div>
+  <div class="background-image2"></div>
+  <div class="background-image3"></div>
+  <div class="container mx-auto pt-16 z-10 relative">
     <div class="flex justify-between mx-10">
       <div class="text-4xl">
         <SocialMedia />

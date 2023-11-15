@@ -212,7 +212,7 @@
     <div class="flex justify-center">
       <button
         type="submit"
-        class="w-full py-4 text-white bg-purple-light rounded-full text-2xl hover:shadow-xl"
+        class="w-full py-4 text-white bg-black rounded-full text-2xl hover:shadow-xl hover:bg-purple-light transition-all"
       >
         {{ props.lenguage ? 'Regístrate' : 'Sign Up'}}
       </button>

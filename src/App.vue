@@ -21,11 +21,11 @@
   <div class="background-image2"></div>
   <div class="background-image3"></div>
   <div class="container mx-auto pt-16 z-10 relative">
-    <div class="flex justify-between mx-10">
-      <div class="text-4xl">
+    <div class="sm:flex sm:justify-between sm:mx-10">
+      <div class="text-4xl flex justify-center">
         <SocialMedia />
       </div>
-      <div>
+      <div class="flex justify-center mt-4">
         <Lenguage
           :lenguage="lenguage"
           @change="handleChangeSwitch"
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class=" max-w-screen-sm mx-auto ">
+    <div class=" max-w-screen-sm sm:mx-auto ">
       <Header
         :lenguage="lenguage"
       />

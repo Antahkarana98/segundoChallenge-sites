@@ -9,7 +9,7 @@
 
     <h2 v-if="props.lenguage" class="text-custom-gray text-2xl">Aumenta tus ingresos a través de tu contenido en <strong>Pagina</strong></h2>
     <h2 v-else class="text-custom-gray text-2xl">Increase your income through your content on <strong>Page</strong></h2>
-    <div class="bg-black mx-10 py-1 rounded-full mt-8 mb-12 flex">
+    <div class="bg-black sm:mx-10 py-1 rounded-full mt-8 mb-12 flex">
       <div class="mx-auto py-1">
         <p class="text-3xl text-white">{{props.lenguage ? 'Regístrate aquí' : 'Sign up here'}} </p>
       </div>

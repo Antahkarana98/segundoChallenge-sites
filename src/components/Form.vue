@@ -112,13 +112,13 @@
 
 <template>
   <form class="">
-    <div class="relative mb-4">
+    <div class="relative mb-4 flex justify-center">
       <input
         type="text"
         :placeholder="props.lenguage ? 'Correo Electrónico' : 'Email'"
         name="email"
         id="email"
-        :class="errorEmail === 1 ? 'w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorEmail === 1 ? 'w-11/12 sm:w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-11/12 sm:w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.email"
         @input="validarFormulario"
       />
@@ -130,13 +130,13 @@
       </div>
     </div>
 
-    <div class="relative mb-4">
+    <div class="relative mb-4 flex justify-center">
       <input
         type="text"
         :placeholder="props.lenguage ? 'Nombre Completo' : 'Full Name'"
         name="name"
         id="name"
-        :class="errorName === 1 ? 'w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorName === 1 ? 'w-11/12 sm:w-full py-4 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-11/12 sm:w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.name"
         @input="validarFormulario"
       />
@@ -149,13 +149,13 @@
 
     </div>
 
-    <div class="relative mb-4">
+    <div class="relative mb-4 flex justify-center">
       <input
         type="date"
         :placeholder="datePlaceholder"
         name="date"
         id="date"
-        :class="errorDate === 1 ? 'w-full py-4 text-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 text-custom-gray  rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorDate === 1 ? 'w-11/12 sm:w-full py-4 text-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-11/12 sm:w-full py-4 text-custom-gray  rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.date"
         @input="validarFormulario"
       />
@@ -168,35 +168,35 @@
     </div>
 
 
-    <div class="relative mb-4">
+    <div class="relative mb-4 flex justify-center">
       <input
         type="password"
         :placeholder="props.lenguage ? 'Contraseña' : 'Password'"
         name="password"
         id="password"
-        :class="errorPassword === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorPassword === 1 ? 'w-11/12 sm:w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-11/12 sm:w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.password"
         @input="validarFormulario"
       />
 
       <div class="absolute inset-y-0 left-0 flex items-center ps-12">
-        <img src="../assets/candado2.png" alt="" width="19" height="19">
+        <img src="../assets/candado2.png" alt="" width="19" height="19" />
       </div>
     </div>
 
-    <div class="relative mb-6">
+    <div class="relative mb-4 flex justify-center">
       <input
         type="password"
         :placeholder="props.lenguage ? 'Repetir Contraseña' : 'Repite Password'"
         name="password2"
         id="password2"
-        :class="errorPassword2 === 1 ? 'w-full py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
+        :class="errorPassword2 === 1 ? 'w-11/12 sm:w-full  py-5 placeholder-custom-gray rounded-full ps-24 border-4 border-green-400 focus:shadow-xl focus:outline-none' : 'w-11/12 sm:w-full py-4 placeholder-custom-gray rounded-full ps-24 focus:shadow-xl focus:outline-none'"
         :value="user.password2"
         @input="validarFormulario"
       />
 
       <div class="absolute inset-y-0 left-0 flex items-center ps-12">
-        <img src="../assets/candado2.png" alt="" width="19" height="19">
+        <img src="../assets/candado2.png" alt="" width="19" height="19" />
       </div>
     </div>
 
@@ -205,14 +205,14 @@
       con la mayoria de edad de su lugar de residencia.
     </p>
 
-    <p v-else class="text-center text-custom-gray mb-8">By completing the registration, you are accepting our <span class="text-black font-semibold ">privacy policies and terms of service</span>, also
+    <p v-else class="text-center  text-custom-gray mb-8">By completing the registration, you are accepting our <span class="text-black font-semibold ">privacy policies and terms of service</span>, also
       confirming that you are of legal age in your place of residence.
     </p>
 
     <div class="flex justify-center">
       <button
         type="submit"
-        class="w-full py-4 text-white bg-black rounded-full text-2xl hover:shadow-xl hover:bg-purple-light transition-all"
+        class="w-3/4 py-4 mb-3 text-white bg-black rounded-full text-2xl hover:shadow-xl hover:bg-purple-light transition-all sm:w-full"
       >
         {{ props.lenguage ? 'Regístrate' : 'Sign Up'}}
       </button>
